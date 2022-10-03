@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>String Duplication</title>
+</head>
+
+<body>
+    <h1>String Duplication</h1>
+    <div id="app">
+        <input v-model="Word" type="text" id="Word"/>
+        <input v-model="number" type="number" id="number"/>
+        <button @click="duplicator(Word, number)">message</button>
+        <p v-if="message <= 0">{{errmsg}}</p>
+        <p>{{message}}</p>   
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
